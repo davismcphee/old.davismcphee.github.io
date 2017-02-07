@@ -1,8 +1,14 @@
+body {
+    font-size: 1em;
+}
+
 header {
     background-image: url("../images/dartmouth_map_view.jpg");
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 100vh;
+    min-height: 600px;
+    width: 100vw;
     position: relative;
 }
 
@@ -13,11 +19,56 @@ header::after {
     height: 100%;
     width: 100%;
     top: 0;
-    background-color: rgba(4, 74, 52, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header-content {
+    position: relative;
+    display: inline-block;
+    color: white;
+    z-index: 1;
+    margin-top: 15%;
+}
+
+.header-content * {
+    transition: 1s;
+}
+
+.logo-main:hover * {
+    color: #7B4B94;
 }
 
 header h1 {
-    width: 100%;
-    color: white;
-    z-index: 1;
+    font-size: 3.5em;
+    font-weight: 100;
+    padding: 10px;
+    border: 2px solid;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 2em;
+    margin: 5px 0 0 0;
+    font-weight: 100;
+}
+
+.header-content a {
+    color: inherit;
+}
+
+nav {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+nav i {
+    margin: 0 5px 0 5px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+nav i:hover {
+    background-color: #7B4B94;
 }
