@@ -6,9 +6,10 @@
         <title>Davis McPhee</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style_main.css">
         <link href="https://fonts.googleapis.com/css?family=Assistant:200|Dawning+of+a+New+Day|Open+Sans+Condensed:300" rel="stylesheet">
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>-->
+        <link rel="stylesheet" href="css/style_main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     </head>
     <body>
         <header>
@@ -17,17 +18,17 @@
                     <nav class="nav-main">
                         <ul>
                             <li>
-                                <a href="aboutme.html">
+                                <a href="aboutme.html" class="purple">
                                     ABOUT ME
                                 </a>
                             </li>
                             <li>
-                                <a href="examples.html">
+                                <a href="examples.html" class="green">
                                     EXAMPLES
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                            	<a href="contact.html" class="pink">
                                     CONTACT
                                 </a>
                             </li>
@@ -37,16 +38,19 @@
             </div>
             <div class="row s12 center-align">
                 <div class="header-content">
-                    <a href="index.html" class="logo-main">
+                    <a href="https://github.com/davismcphee" class="icon-github">
+                        <i class="fa fa-3x fa-github-alt" aria-hidden="true"></i>
+                    </a>
+                    <div class="logo-main">
                         <h1>Davis McPhee</h1>
                         <h2>Developer | Designer</h2>
-                    </a>
+                    </div>
                 </div>
             </div>
         </header>
         <script>
             
-            var mainNavItems = document.getElementsByClassName("nav-main")[0].getElementsByTagName("a");
+            /*var mainNavItems = document.getElementsByClassName("nav-main")[0].getElementsByTagName("a");
             var logoMain = document.getElementsByClassName("logo-main")[0];
             
             function setColour(e, defaultColour) {
@@ -75,7 +79,73 @@
                 mainNavItems[i].addEventListener("mouseleave", function() {
                     setColour(null);
                 });
+            }*/
+            
+            function ColourSelector(colours, elementsToSelect, elementsToChange) {
+                
+                var self = this;
+                this.colours = colours;
+                this.elementsToSelect = elementsToSelect;
+                this.elementsToChange = elementsToChange;      
+                //http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+                var urlParams;
+                (window.onpopstate = function () {
+                    var match,
+                        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+                        search = /([^&=]+)=?([^&]*)/g,
+                        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+                        query  = window.location.search.substring(1);
+
+                    urlParams = {};
+                    while (match = search.exec(query))
+                       urlParams[decode(match[1])] = decode(match[2]);
+                })();
+                
+                var defaultColour = this.colours[Math.floor((Math.random() * 4))];
+                
+                if ("colour" in urlParams)
+                    defaultColour = urlParams["colour"];
+                
+                for (var i = 0; i < this.elementsToChange.length; i++)
+                    this.elementsToChange[i].classList.add(defaultColour);
+
+                for (var i = 0; i < this.elementsToSelect.length; i++) {
+                    var href = this.elementsToSelect[i].href;
+                    if (href.includes("?"))
+                        href += "&";
+                    else
+                        href += "?";
+                    href += "colour=" + this.colours[i];
+                }
+                
+                for (var i = 0; i < this.elementsToSelect.length; i ++) {
+                    this.elementsToSelect[i].currentElementNumber = i;
+                    this.elementsToSelect[i].addEventListener("mouseenter", function() {
+                        for (var j = 0; j < self.elementsToChange.length; j++) {
+                            for (var k = 0; k < self.colours.length; k++) {
+                                if (self.elementsToChange[j].classList != null && self.elementsToChange[j].classList.contains(self.colours[k]))
+                                    self.elementsToChange[j].classList.remove(self.colours[k]);
+                            }
+                            self.elementsToChange[j].classList.add(self.colours[this.currentElementNumber]);
+                        }
+                    });
+                    this.elementsToSelect[i].addEventListener("mouseleave", function() {
+                        for (var j = 0; j < self.elementsToChange.length; j++) {
+                            for (var k = 0; k < self.colours.length; k++) {
+                                if (self.elementsToChange[j].classList != null && self.elementsToChange[j].classList.contains(self.colours[k]))
+                                    self.elementsToChange[j].classList.remove(self.colours[k]);
+                            }
+                            self.elementsToChange[j].classList.add(defaultColour);
+                        }
+                    });
+                }
+                
             }
+            
+            var colours = ["default", "purple", "green", "pink"];
+            var navMainLinks = document.getElementsByClassName("nav-main")[0].getElementsByTagName("a");
+            var header = document.getElementsByTagName("header");
+            var colourSelector = new ColourSelector(colours, navMainLinks, header);
             
         </script>
     </body>
