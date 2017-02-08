@@ -1,5 +1,6 @@
 body {
     font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 * {
@@ -10,7 +11,7 @@ body {
 
 header {
     height: 100vh;
-    min-height: 600px;
+    min-height: 230px;
     width: 100%;
     position: relative;
     background-color: rgb(194, 218, 222);
@@ -108,11 +109,37 @@ header::after {
     display: inline-block;
     color: white;
     z-index: 1;
-    margin-top: 300px;
+    margin-top: 35vh;
 }
 
 .header-content h1, .header-content h2 {
     transition: color 0.8s;
+}
+
+@keyframes logo-enter {
+    0% {
+        opacity:0;
+        transform: translate(0px,-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
+}
+
+.logo-main * {
+    opacity:0;
+    transform: translate(0px,-25px);
+    animation: logo-enter 2s 1 forwards;
+}
+
+.logo-main {
+    font-family: 'Dawning of a New Day', cursive;
+    font-weight: 100;
+}
+
+.logo-main h2 {
+    font-family: 'Assistant', sans-serif;
 }
 
 .logo-main:hover {
