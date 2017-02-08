@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Davis McPhee</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style_main.css">
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>-->
+    </head>
+    <body>
+        <header class="pink">
+           <div class="row nav-main-container">
+               <div class="col s10 offset-s1">
+                    <nav class="nav-main">
+                        <ul>
+                            <li>
+                                <a href="aboutme.html">
+                                    ABOUT ME
+                                </a>
+                            </li>
+                            <li>
+                                <a href="examples.html">
+                                    EXAMPLES
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="active">
+                                    CONTACT
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row s12 center-align">
+                <div class="header-content">
+                    <a href="index.html" class="logo-main">
+                        <h1>Davis McPhee</h1>
+                        <h2>Developer | Designer</h2>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <script>
+            
+            var mainNavItems = document.getElementsByClassName("nav-main")[0].getElementsByTagName("a");
+            
+            function setColour(e, defaultColour) {
+                
+                var mainNavItems = document.getElementsByClassName("nav-main")[0].getElementsByTagName("a");
+                var mainNavColours = ["purple", "green", "pink"];
+                var colour = defaultColour;
+                var header = document.getElementsByTagName("header")[0];
+                
+                if (e !== null) {
+                    for (var i = 0; i < mainNavItems.length; i++) {
+                        if (mainNavItems[i] === e)
+                            colour = mainNavColours[i];
+                    }
+                }
+                
+                header.className = colour;
+                
+            }
+            
+            for (var i = 0; i < mainNavItems.length; i ++) {
+                console.log(mainNavItems[i]);
+                mainNavItems[i].addEventListener("mouseenter", function() {
+                    setColour(this);
+                });
+                mainNavItems[i].addEventListener("mouseleave", function() {
+                    setColour(null, "pink");
+                });
+            }
+        </script>
+    </body>
+</html>

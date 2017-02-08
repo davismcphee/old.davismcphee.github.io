@@ -2,14 +2,96 @@ body {
     font-size: 1em;
 }
 
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 header {
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(194, 218, 222);
+    transition: background-color 0.8s;
+}
+
+/*
+header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("../images/dartmouth_map_view.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    min-height: 600px;
-    width: 100vw;
-    position: relative;
+    opacity: 0.05;
+}
+*/
+
+header .logo-main:hover {
+    color: rgb(134, 190, 199);
+}
+
+header .nav-main a {
+    background-color: transparent !important;
+}
+
+header .nav-main a:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: transparent;
+    transition: 0.8s;
+}
+
+header .nav-main a:hover {
+    background-color: transparent !important;
+}
+
+header .nav-main a:hover:after {
+    width: 100%;
+    background-color: rgb(134, 190, 199);
+}
+
+header.pink, header.pink .nav-main-container {
+    background-color: rgb(222, 194, 194) !important;
+}
+
+header.pink .logo-main:hover, header.pink .nav-main a.active {
+    color: rgb(211, 155, 155);
+}
+
+header.pink .nav-main a:hover:after, header.pink .nav-main a.active:after {
+    background-color: rgb(211, 155, 155);
+}
+
+header.purple, header.purple .nav-main-container {
+    background-color: rgb(209, 194, 222) !important;
+}
+
+header.purple .logo-main:hover, header.purple .nav-main a.active {
+    color: rgb(176, 134, 206);
+}
+
+header.purple .nav-main a:hover:after, header.green .nav-main a.active {
+    background-color: rgb(176, 134, 206);
+}
+
+header.green, header.green .nav-main-container {
+    background-color: rgb(203, 222, 194) !important;
+}
+
+header.green .logo-main:hover, header.green .nav-main a.active {
+    color: rgb(165, 203, 148);
+}
+
+header.green .nav-main a:hover:after {
+    background-color: rgb(165, 203, 148);
 }
 
 header::after {
@@ -19,7 +101,6 @@ header::after {
     height: 100%;
     width: 100%;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header-content {
@@ -27,15 +108,15 @@ header::after {
     display: inline-block;
     color: white;
     z-index: 1;
-    margin-top: 15%;
+    margin-top: 300px;
 }
 
-.header-content * {
-    transition: 1s;
+.header-content h1, .header-content h2 {
+    transition: color 0.8s;
 }
 
-.logo-main:hover * {
-    color: #7B4B94;
+.logo-main:hover {
+    color: inherit;
 }
 
 header h1 {
@@ -57,18 +138,51 @@ header h2 {
 }
 
 nav {
+    position: relative;
     background-color: transparent;
     box-shadow: none;
+    z-index: 2;
 }
 
-nav i {
-    margin: 0 5px 0 5px;
-    padding: 10px;
-    border-radius: 25px;
-    width: 50px;
-    height: 50px;
+ul {
+    display: inline-block;
 }
 
-nav i:hover {
-    background-color: #7B4B94;
+.nav-main-container {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: rgb(194, 218, 222);
+    transition: background-color 0.8s;
+}
+
+.nav-main {
+    display: inline-block;
+    height: auto;
+    line-height: 0; 
+    height: 60px;
+}
+
+.nav-main ul {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-main a {
+    line-height: normal;
+    font-weight: 100;
+    font-size: 1.2em;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid transparent;
+    transition: color 0.8s;
+}
+
+.nav-main li:not(:last-of-type) {
+    margin: 0 60px 0 0;
+}
+
+.nav-main a:hover {
+    background-color: transparent;
+    border-bottom: 1px solid inherit;
 }
