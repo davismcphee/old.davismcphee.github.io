@@ -5,7 +5,7 @@ var colourSelector = new ColourSelector(colours, navMainLinks, header);
 var navMain = document.getElementsByClassName("nav-main")[0];
 
 window.addEventListener("resize", function(e) {
-    if (document.documentElement.clientWidth < 360)
+    if (document.documentElement.clientWidth < 370)
         navMain.classList.add("screen-small");
     else
         navMain.classList.remove("screen-small");
