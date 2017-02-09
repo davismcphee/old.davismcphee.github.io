@@ -8,7 +8,6 @@ console.log(document.documentElement.clientWidth);
 
 function adjustNavBar() {
     if (document.documentElement.clientWidth < 370)
-        screen
         navMain.classList.add("screen-small");
     else
         navMain.classList.remove("screen-small");
