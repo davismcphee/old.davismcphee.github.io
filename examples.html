@@ -6,11 +6,13 @@
         <title>Davis McPhee</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Assistant:200|Dawning+of+a+New+Day|Open+Sans+Condensed:300" rel="stylesheet">
         <link rel="stylesheet" href="css/style_main.css">
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     </head>
     <body>
-        <header class="green">
+        <header>
            <div class="row nav-main-container">
                <div class="col s10 offset-s1">
                     <nav class="nav-main">
@@ -26,7 +28,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                            	<a href="contact.html">
                                     CONTACT
                                 </a>
                             </li>
@@ -36,44 +38,20 @@
             </div>
             <div class="row s12 center-align">
                 <div class="header-content">
-                    <a href="index.html" class="logo-main">
+                    <div class="icon-wrapper">
+                        <a href="https://github.com/davismcphee" class="icon-github">
+                            <i class="fa fa-3x fa-github-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="icon-shadow"></div>
+                    <div class="logo-main">
                         <h1>Davis McPhee</h1>
                         <h2>Developer | Designer</h2>
-                    </a>
+                    </div>
                 </div>
             </div>
         </header>
-        <script>
-            
-            var mainNavItems = document.getElementsByClassName("nav-main")[0].getElementsByTagName("a");
-            
-            function setColour(e, defaultColour) {
-                
-                var mainNavItems = document.getElementsByClassName("nav-main")[0].getElementsByTagName("a");
-                var mainNavColours = ["purple", "green", "pink"];
-                var colour = defaultColour;
-                var header = document.getElementsByTagName("header")[0];
-                
-                if (e !== null) {
-                    for (var i = 0; i < mainNavItems.length; i++) {
-                        if (mainNavItems[i] === e)
-                            colour = mainNavColours[i];
-                    }
-                }
-                
-                header.className = colour;
-                
-            }
-            
-            for (var i = 0; i < mainNavItems.length; i ++) {
-                console.log(mainNavItems[i]);
-                mainNavItems[i].addEventListener("mouseenter", function() {
-                    setColour(this);
-                });
-                mainNavItems[i].addEventListener("mouseleave", function() {
-                    setColour(null, "green");
-                });
-            }
-        </script>
+        <script src="js/colour-selector.js"></script>
+        <script src="js/common-functionality.js"></script>
     </body>
 </html>
