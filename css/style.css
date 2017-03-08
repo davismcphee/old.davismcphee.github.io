@@ -170,8 +170,7 @@ footer.page-footer {
 
 .navbar-fixed li a:hover,
 .side-nav li a:hover,
-.navbar-fixed li a.active,
-.side-nav li a.active {
+.navbar-fixed li a.active {
     background-color: white;
     border-bottom: 1px solid #F45D01;
 }
