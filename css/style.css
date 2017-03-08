@@ -283,6 +283,7 @@ footer.page-footer {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    min-width: 100%;
 }
 
 .profiles-section .row {
