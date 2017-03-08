@@ -1,58 +1,344 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Davis McPhee</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Assistant:200|Dawning+of+a+New+Day|Open+Sans+Condensed:300" rel="stylesheet">
-        <link rel="stylesheet" href="css/style_main.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    </head>
-    <body>
-        <header>
-           <div class="row nav-main-container">
-               <div class="col s10 offset-s1">
-                    <nav class="nav-main">
-                        <ul>
-                            <li>
-                                <a href="aboutme.html">
-                                    ABOUT ME
-                                </a>
-                            </li>
-                            <li>
-                                <a href="examples.html">
-                                    EXAMPLES
-                                </a>
-                            </li>
-                            <li>
-                            	<a href="contact.html">
-                                    CONTACT
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    
-                </div>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>South Shore Board Sports</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slidejs.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> </head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#index-banner" class="brand-logo"> <img id="nav-logo" src="images/logo_small_black.png"> </a>
+                <ul class="right hide-on-med-and-down">
+                    <li> <a href="#about-us">ABOUT US</a> </li>
+                    <li> <a href="#services">SERVICES</a> </li>
+                    <li> <a href="#gallery">GALLERY</a> </li>
+                    <li> <a href="#contact">CONTACT</a> </li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"> <i class="material-icons">menu</i> </a>
             </div>
-            <div class="row s12 center-align">
-                <div class="header-content">
-                    <div class="icon-wrapper">
-                        <a href="https://github.com/davismcphee" class="icon-github">
-                            <i class="fa fa-3x fa-github-alt" aria-hidden="true"></i>
-                        </a>
+        </nav>
+    </div>
+    <ul id="nav-mobile" class="side-nav">
+        <li> <a href="#about-us">ABOUT US</a> </li>
+        <li> <a href="#services">SERVICES</a> </li>
+        <li> <a href="#gallery">GALLERY</a> </li>
+        <li> <a href="#contact">CONTACT</a> </li>
+    </ul>
+    <div id="index-banner" class="parallax-container parallax-main"> <img src="images/logo_remake_white.png" id="parallax-logo">
+        <div class="parallax"> <img src="images/parallax1.jpg" alt="NoImage"> </div>
+    </div>
+    <div class="scroll-section">
+        <div class="section" id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6 center">
+                        <h4>Who Are We?</h4>
+                        <p class="center-align flow-text">Located on the beautiful ocean frontage in the heart of Hubbards, Nova Scotia, South Shore Board Sports has the best services for all your stand-up paddle surfing needs. Whether you are looking to purchase or rent equipment, or experience our fantastic SUP yoga lessons, we are here to provide affordable and friendly service to all our customers.</p>
                     </div>
-                    <div class="icon-shadow"></div>
-                    <div class="logo-main">
-                        <h1>Davis McPhee</h1>
-                        <h2>Developer | Designer</h2>
+                    <div class="col s12 m6 center">
+                        <h4>What is SUP?</h4>
+                        <p class="center-align flow-text">Stand-up paddle surfing and stand-up paddle boarding (Hoe he'e nalu in the Hawaiian Language) originated in Hawaii as an offshoot of surfing; however, they have existed in some form for thousands of years. Unlike traditional surfing where the rider sits until a wave comes, stand up-paddle boarders stand upright and use a paddle to propel themselves through the water.</p>
                     </div>
                 </div>
             </div>
-        </header>
-        <script src="js/colour-selector.js"></script>
-        <script src="js/common-functionality.js"></script>
-    </body>
+        </div>
+        <div class="section background-orange profiles-section">
+            <div class="">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="col s6">
+                            <div class="profile-picture z-depth-4"> <img src="images/clayton.jpg" id="clayton"> </div>
+                        </div>
+                        <div class="col s6 description">
+                            <h5>Clayton Wojnar</h5>
+                            <p class="left-align flow-text">Clayton has lived around the water his whole life, from the rivers and lakes of Ontario to the beautiful ocean tides of Nova Scotia where he currently resides. As an experienced Aircraft Maintenance Engineer and a World Paddle Board Association certified SUP instructor, he has over a decade of experience teaching and instructing.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="col s6 description">
+                            <h5 class="right-align">Jennifer Wojnar</h5>
+                            <p class="right-align flow-text">Jennifer grew up on a lake and has been swimming since she can remember. She now has over ten years of experience as a Tidal Bore Rafting Guide, and is a certified yoga and SUP instructor. In addition, she is an avid skier who instructed in Whistler, BC for over four years, and has competed in Big Mountain competitions!</p>
+                        </div>
+                        <div class="col s6">
+                            <div class="profile-picture z-depth-4"> <img src="images/jennifer.jpg" id="jennifer"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-container valign-wrapper overlayed">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">We welcome all levels of boarders. Hope to see you on the water!</h5> </div>
+            </div>
+        </div>
+        <div class="parallax"> <img src="images/parallax2.jpg" alt="NoImage"> </div>
+    </div>
+    <div class="scroll-section">
+        <div class="icon-block-section background-blue">
+            <div class="section container">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center">
+                                    <img src="images/money_icon.png">
+                                </h2>
+                            <h5 class="center">Buy</h5>
+                            <p class="light">We provide sales of SUP's, masks, fins, snorkels, paddles, bags, leashes, foam racks, straps, illuminated lights, shop swag, boogie boards, skim boards and more!</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center">
+                                    <img src="images/paddle_icon.png">
+                                </h2>
+                            <h5 class="center">Rent</h5>
+                            <p class="light">We rent based on a half day, full day or a 24 hour rental period. We can drop off or pick up for an additional charge. We also have many tour packages to chose from.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center">
+                                    <img src="images/yoga_icon.png">
+                                </h2>
+                            <h5 class="center">Yoga</h5>
+                            <p class="light">Take your practice out of the studio and enjoy the calming elements of the ocean. SUP yoga is a playful way of letting go while building strength, flexibility and balance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="collapsible center-align" id="services" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header active">Rentals</div>
+                <div class="collapsible-body">
+                    <table class="bordered">
+                        <thead>
+                            <th>Gear</th>
+                            <th>Hourly</th>
+                            <th>Half Day</th>
+                            <th>Full Day</th>
+                            <th>24hr (2 day min)</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Standup Paddle Boards</td>
+                                <td>$20.00</td>
+                                <td>$40.00</td>
+                                <td>$60.00</td>
+                                <td>$200.00</td>
+                            </tr>
+                            <tr>
+                                <td>Skim Boards</td>
+                                <td>N/A</td>
+                                <td>$15.00</td>
+                                <td>$20.00</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>Body Boards</td>
+                                <td>N/A</td>
+                                <td>$15.00</td>
+                                <td>$20.00</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>Snorkel Gear</td>
+                                <td>N/A</td>
+                                <td>$15.00</td>
+                                <td>$20.00</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>Fishing Gear</td>
+                                <td>N/A</td>
+                                <td>$15.00</td>
+                                <td>$20.00</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td>Roof Racks</td>
+                                <td>N/A</td>
+                                <td>$7.00</td>
+                                <td>$14.00</td>
+                                <td>Free*</td>
+                            </tr>
+                        </tbody>
+                    </table> <span>*With 2 day rental of SUP</span> </div>
+            </li>
+            <li>
+                <div class="collapsible-header">SUP Yoga Classes</div>
+                <div class="collapsible-body">
+                    <table class="bordered">
+                        <thead>
+                            <th>Type</th>
+                            <th>Price</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Drop-in + Own Board</td>
+                                <td>$20</td>
+                            </tr>
+                            <tr>
+                                <td>Drop-in + Board Rental</td>
+                                <td>$50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">SUP Tours</div>
+                <div class="collapsible-body">
+                    <table class="bordered">
+                        <thead>
+                            <th>Type</th>
+                            <th>Price</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Half Day + Own Board</td>
+                                <td>$60</td>
+                            </tr>
+                            <tr>
+                                <td>Half Day + Board Rental</td>
+                                <td>$80</td>
+                            </tr>
+                            <tr>
+                                <td>Full Day + Own Board</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>Full Day + Board Rental</td>
+                                <td>$120</td>
+                            </tr>
+                            <tr>
+                                <td>Nighttime Illuminated Tour</td>
+                                <td>$50</td>
+                            </tr>
+                            <tr>
+                                <td>Overnight Island Campout*</td>
+                                <td>$125</td>
+                            </tr>
+                        </tbody>
+                    </table> <span>*Includes SUP, tent, sleeping bag, cook wear, life jackets, first aid and fishing kit</span> </div>
+            </li>
+            <li>
+                <div class="collapsible-header">Training</div>
+                <div class="collapsible-body">
+                    <table class="bordered">
+                        <thead>
+                            <th>Type</th>
+                            <th>Price</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Paddle Canada Basic Course</td>
+                                <td>$80</td>
+                            </tr>
+                            <tr>
+                                <td>Paddle Canada Basic Course w/ SUP rental</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>Paddle Canada Advanced Course</td>
+                                <td>$80</td>
+                            </tr>
+                            <tr>
+                                <td>Paddle Canada Advanced Course w/ SUP Rental</td>
+                                <td>$100</td>
+                            </tr>
+                        </tbody>
+                    </table> <span>**We offer basic and advanced skill courses designed by Paddle Canada. Only those with a successful completion will be awarded certificates. Each course is 3 hours in length. We’re fully mobile and will travel throughout the province.</span> </div>
+            </li>
+        </ul>
+    </div>
+    <!--
+    <div class="parallax-container valign-wrapper overlayed">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">From sheltered coves to beautiful shorelines, come see it all.</h5> </div>
+            </div>
+        </div>
+        <div class="parallax"> <img src="images/parallax3.jpg" alt="NoImage"> </div>
+    </div>
+-->
+    <div class="parallax-container valign-wrapper overlayed">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">Come out and experience the fastest growing watersport in the world.</h5> </div>
+            </div>
+        </div>
+        <div class="parallax"> <img src="images/parallax4.jpg" alt="NoImage"> </div>
+    </div>
+    <div class="scroll-section">
+        <div class="container gallery" id="gallery">
+            <div id="slides"> <img src="images/carousel/c1.jpg"> <img src="images/carousel/c2.jpg"> <img src="images/carousel/c3.jpg"> <img src="images/carousel/c4.jpg"> <img src="images/carousel/c5.jpg"> <img src="images/carousel/c6.jpg"> <img src="images/carousel/c7.jpg"> <img src="images/carousel/c8.jpg">
+                <a href="#" class="slidesjs-previous slidesjs-navigation"> <i class="fa fa-chevron-left" aria-hidden="true"></i> </a>
+                <a href="#" class="slidesjs-next slidesjs-navigation"> <i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-section">
+        <div class="container" id="contact">
+            <h4 class="center">Contact Us</h4>
+            <div class="row contact-info-list">
+                <div class="col s12 l5 offset-l2"> <i class="material-icons">phone</i><a href="tel:1-902-489-9435">+1(902) 489-9435</a> </div>
+                <div class="col s12 l5"> <i class="material-icons">email</i><a href="mailto:sales@southshoreboardsports.co">sales@southshoreboardsports.co</a> </div>
+                <div class="col s12 l6 offset-l2"> <i class="material-icons">directions_car</i>204 B Highway 329, Hubbards, NS, B0J 1T0 </div>
+            </div>
+            <hr>
+            <div class="row">
+                <form class="col s12 l8 offset-l2">
+                    <div class="row">
+                        <div class="input-field col s12 m6"> <i class="material-icons prefix">account_circle</i>
+                            <input id="name-iput" type="text" class="validate">
+                            <label for="name-iput">Name</label>
+                        </div>
+                        <div class="input-field col s12 m6"> <i class="material-icons prefix">email</i>
+                            <input id="email-iput" type="email" class="validate">
+                            <label for="email-iput">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea id="message-textarea" class="materialize-textarea"></textarea>
+                            <label for="message-textarea">Message</label>
+                        </div>
+                        <input type="submit" class="waves-effect waves-light btn col s10 offset-s1" id="submit-input" value="SUBMIT"> </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="section">
+            <div class="container">
+                <div class="row center">
+                    <div class="col s12">
+                        <a href="http://www.paddlecanada.com/"><img src="images/paddle-canada.png"></a>
+                        <a href="http://worldpaddleassociation.com/"><img src="images/wpa.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container"> ©2017 South Shore Board Sports | Made with <i class="fa fa-heart-o" aria-hidden="true" style="color: red;"></i> (and <a href="http://materializecss.com/">Materialize</a>) by <a href="http://davismcphee.github.io/">Davis McPhee</a> | Icons courtesy of <a href="https://material.io/">Material Design</a>, <a href="http://flaticon.com/">Font Awesome</a>, and <a href="http://fontawesome.io/">Flaticon</a> </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+</body>
+
 </html>

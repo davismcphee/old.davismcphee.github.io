@@ -8,14 +8,20 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Assistant:200|Dawning+of+a+New+Day|Open+Sans+Condensed:300" rel="stylesheet">
         <link rel="stylesheet" href="css/style_main.css">
+        <link rel="stylesheet" href="css/style_landing.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     </head>
     <body>
         <header>
            <div class="row nav-main-container">
-               <div class="col s10 offset-s1">
-                    <nav class="nav-main">
+               <div class="col s10 offset-s1 nav-main-wrapper">
+                   <div class="nav-mobile-main-button hide-on-med-and-up right">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="nav-main right-align hide-on-small-only">
                         <ul>
                             <li>
                                 <a href="aboutme.html">
@@ -23,7 +29,28 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="examples.html" class="active">
+                                <a href="examples.html">
+                                    EXAMPLES
+                                </a>
+                            </li>
+                            <li>
+                            	<a href="contact.html">
+                                    CONTACT
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col s12 nav-mobile-main-wrapper hide-on-med-and-up closed">
+                    <nav class="nav-mobile-main center-align">
+                        <ul>
+                            <li>
+                                <a href="aboutme.html">
+                                    ABOUT ME
+                                </a>
+                            </li>
+                            <li>
+                                <a href="examples.html">
                                     EXAMPLES
                                 </a>
                             </li>
