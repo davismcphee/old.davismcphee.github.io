@@ -85,6 +85,13 @@ p {
     border-radius: 2px;
 }
 
+.parallax-container .section {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+}
+
+/*
 @media only screen and (max-width: 992px) {
     .parallax-container .section {
         position: absolute;
@@ -95,12 +102,7 @@ p {
         top: 10%;
     }
 }
-
-@media only screen and (max-width: 600px) {
-    #index-banner .section {
-        top: 0;
-    }
-}
+*/
 
 .icon-block-section {
     color: white;
@@ -284,6 +286,16 @@ footer.page-footer {
     top: 50%;
     transform: translate(-50%, -50%);
     min-width: 100%;
+}
+
+.profiles-section .profile-picture::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 99;
 }
 
 .profiles-section .row {

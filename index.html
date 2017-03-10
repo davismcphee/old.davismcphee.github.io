@@ -55,7 +55,7 @@
                 <div class="row">
                     <div class="col s12 l6">
                         <div class="col s12">
-                            <div class="profile-picture z-depth-4"> <img src="images/clayton.jpg" id="clayton"> </div>
+                            <div class="profile-picture"> <img src="images/clayton.jpg" id="clayton"> </div>
                         </div>
                         <div class="col s12 description">
                             <h5>Clayton Wojnar</h5>
@@ -68,7 +68,7 @@
                             <p class="right-align flow-text">Jennifer grew up on a lake and has been swimming since she can remember. She now has over ten years of experience as a Tidal Bore Rafting Guide, and is a certified yoga and SUP instructor. In addition, she is an avid skier who instructed in Whistler, BC for over four years, and has competed in Big Mountain competitions!</p>
                         </div>
                         <div class="col s12">
-                            <div class="profile-picture z-depth-4"> <img src="images/jennifer.jpg" id="jennifer"> </div>
+                            <div class="profile-picture"> <img src="images/jennifer.jpg" id="jennifer"> </div>
                         </div>
                     </div>
                 </div>
@@ -301,18 +301,18 @@
             </div>
             <hr>
             <div class="row">
-                <form class="col s12 l8 offset-l2">
+                <form class="col s12 l8 offset-l2" action="mailto:test@test.com">
                     <div class="row">
                         <div class="input-field col s12 m6"> <i class="material-icons prefix">account_circle</i>
-                            <input id="name-iput" type="text" class="validate">
+                            <input id="name-iput" name="Name" type="text" class="validate">
                             <label for="name-iput">Name</label>
                         </div>
                         <div class="input-field col s12 m6"> <i class="material-icons prefix">email</i>
-                            <input id="email-iput" type="email" class="validate">
+                            <input id="email-iput" name="Email" type="email" class="validate">
                             <label for="email-iput">Email</label>
                         </div>
                         <div class="input-field col s12">
-                            <textarea id="message-textarea" class="materialize-textarea"></textarea>
+                            <textarea id="message-textarea" name="Message" class="materialize-textarea"></textarea>
                             <label for="message-textarea">Message</label>
                         </div>
                         <input type="submit" class="waves-effect waves-light btn col s10 offset-s1" id="submit-input" value="SUBMIT"> </div>
