@@ -435,7 +435,6 @@ li:not(:first-child) .collapsible-header {
 }
 
 #contact h4 {
-    margin-bottom: 40px;
     color: #0f3f4b;
     font-weight: 100;
 }
