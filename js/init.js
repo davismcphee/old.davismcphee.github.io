@@ -10,6 +10,13 @@
         });
         $("#slides").slidesjs({
             navigation: false
+            , play: {
+                interval: 5000
+                , auto: true
+                , pauseOnHover: true
+                , restartDelay: 2500
+                , effect: "fade"
+            }
         });
         $('.collapsible').collapsible();
 
@@ -25,7 +32,7 @@
                 $(this).closest("ul").find("a").removeClass("active");
                 $(this).addClass("active");
                 scrollToAnchor($(this).attr("href"));
-            }         
+            }
         });
         $(window).scroll(function () {
             var windscroll = $(window).scrollTop();
@@ -43,5 +50,9 @@
                 $('nav a:first, .side-nav a:first').addClass('active');
             }
         }).scroll();
+        $("#audio-button").click(function () {
+            $("#audio-button i").toggleClass("hidden");
+            $("#index-banner video").prop("muted") ? $("#index-banner video").prop("muted", false) : $("#index-banner video").prop("muted", true);
+        });
     }); // end of document ready
 })(jQuery); // end of jQuery name space
