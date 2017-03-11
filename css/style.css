@@ -32,12 +32,12 @@ body {
     width: 100% !important;
 }
 
-nav {
+.navbar-fixed {
     box-shadow: 0px -72px 27px 68px rgba(0, 0, 0, 0.35);
 }
 
-nav ul a,
-nav .brand-logo {
+.navbar-fixed ul a,
+.navbar-fixed .brand-logo {
     color: #444;
 }
 
@@ -56,6 +56,10 @@ img {
 .button-collapse {
     color: #444;
     margin: 0 !important;
+}
+
+.parallax {
+    top: 50%;
 }
 
 .parallax-container {
@@ -111,28 +115,13 @@ img {
     transform: translate(-50%, -50%);
 }
 
-.divider-image {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-@media only screen and (max-width: 1200px) {
-    .divider-image {
-        height: 100%;
-        width: auto;
-    }
-}
-
 .icon-block-section {
     color: white;
 }
 
 .icon-block {
     padding: 0 15px;
+    padding: 20px 0; 
 }
 
 .icon-block h2 {
@@ -225,24 +214,19 @@ footer.page-footer {
     border-bottom: 1px solid #ec6e72;
 }
 
-.facebook-icon {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 1;
-    font-size: 3em;
-    display: inline-block;
-    line-height: 0;
-}
-
-.facebook-icon a {
+.notification-bar {
+    background-color: #0f3f4b;
+    padding: 5px;
     color: white;
-    display: inline-block;
-    line-height: 0;
+    font-size: 1.4em;
 }
 
-.facebook-icon a:hover {
-    color: #0f3f4b;
+.notification-bar a {
+    color: white;
+}
+
+.notification-bar a:hover {
+    color: #aac8d0;
 }
 
 .page-footer {
@@ -267,20 +251,44 @@ footer.page-footer {
     margin: 0 20px;
 }
 
-.gallery {
-    padding: 10px;
-}
-
-.gallery .row {
-    margin: 0;
-}
-
 #slides {
-    padding: 40px 10px 0 10px;
+    max-height: 600px;
 }
 
-.slidesjs-container {
-    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+#slides nav {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#slides nav a {
+    color: #343434 !important;
+    border-color: #343434 !important;
+}
+
+#slides nav a:hover {
+    color: #3e3e3e !important;
+    border-color: #3e3e3e !important;
+}
+
+#slides .current {
+    background-color: #ffffff;
+}
+
+#slides img {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+#slides .prev {
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+
+#slides .next {
+    font-size: 2.5em;
+    margin-right: 20px;
 }
 
 .collapsible {
@@ -288,10 +296,10 @@ footer.page-footer {
 }
 
 .collapsible-header {
-    background-color: #f2f2f2;
+    background-color: #41b6b4;
     font-size: 1.8em;
     font-weight: 100;
-    color: #41b6b4;
+    color: white;
     border: none;
 }
 
@@ -304,6 +312,12 @@ li:not(:first-child) .collapsible-header {
     width: 70%;
     margin-left: 15%;
     border: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .valign-wrapper {
+        display: inherit;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -320,6 +334,15 @@ li:not(:first-child) .collapsible-header {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .valign-wrapper {
+        display: inherit;
+    }
+    #slides {
+        max-height: 250px;
+    }
+}
+
 .collapsible-body span {
     display: inline-block;
     padding-top: 10px;
@@ -327,8 +350,8 @@ li:not(:first-child) .collapsible-header {
 
 .collapsible-header.active,
 .collapsible-header:hover {
-    color: #f2f2f2;
-    background-color: #41b6b4;
+    background-color: white;
+    color: #41b6b4;
 }
 
 .collapsible {
@@ -339,6 +362,10 @@ li:not(:first-child) .collapsible-header {
 .anchor {
     position: absolute;
     transform: translateY(-63px);
+}
+
+#about-us {
+    padding: 50px 0 0 0;
 }
 
 .profiles-section {
@@ -353,24 +380,31 @@ li:not(:first-child) .collapsible-header {
     margin: 0 !important;
 }
 
+.profiles-section .row {}
+
 .profiles-section p {
     font-size: 1.4em;
-    padding: 0 40px 20px 40px;
     font-weight: 100;
 }
 
 .profiles-section h5 {
     font-weight: 100;
-    padding-top: 20px;
 }
 
 .profiles-section .profile-picture {
     position: relative;
-    height: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
+    height: 220px;
+    width: 220px;
+    border-radius: 110px;
     overflow: hidden;
+}
+
+.profiles-section .row {
+    padding: 50px 0 !important;
+}
+
+.profiles-section .row:nth-of-type(2) {
+    padding-top: 0 !important;
 }
 
 .profiles-section img {
@@ -381,32 +415,16 @@ li:not(:first-child) .collapsible-header {
     min-width: 100%;
 }
 
-.profiles-section .profile-picture::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 99;
-}
-
-.profiles-section .row {
-    margin: 10px;
-}
-
-
-/*#clayton {
-    left: 10%;
+#clayton {
+    width: 500px;
+    left: 75%;
+    top: 60%;
 }
 
 #jennifer {
-    top: 95%;
-    left: 90%
-}*/
-
-#jennifer {
-    top: 95%;
+    height: 220px;
+    top: 50%;
+    left: 70%;
 }
 
 #contact h4 {
@@ -456,4 +474,17 @@ li:not(:first-child) .collapsible-header {
     background-color: white;
     color: #0f3f4b;
     border: 1px solid #0f3f4b;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
 }

@@ -8,15 +8,8 @@
             fullWidth: true
             , indicators: true
         });
-        $("#slides").slidesjs({
-            navigation: false
-            , play: {
-                interval: 5000
-                , auto: true
-                , pauseOnHover: true
-                , restartDelay: 2500
-                , effect: "fade"
-            }
+        $("#slides").superslides({
+            play: 5000
         });
         $('.collapsible').collapsible();
 
