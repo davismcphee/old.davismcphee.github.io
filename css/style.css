@@ -224,6 +224,26 @@ footer.page-footer {
     border-bottom: 1px solid #ec6e72;
 }
 
+.facebook-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    font-size: 3em;
+    display: inline-block;
+    line-height: 0;
+}
+
+.facebook-icon a {
+    color: white;
+    display: inline-block;
+    line-height: 0;
+}
+
+.facebook-icon a:hover {
+    color: #0f3f4b;
+}
+
 .page-footer {
     padding: 0 !important;
     background-color: white !important;
