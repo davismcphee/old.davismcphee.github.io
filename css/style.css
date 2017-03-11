@@ -341,6 +341,13 @@ li:not(:first-child) .collapsible-header {
     #slides {
         max-height: 300px;
     }
+    .profiles-section .row {
+        text-align: center;
+    }
+    .profiles-section .profile-picture {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .collapsible-body span {
