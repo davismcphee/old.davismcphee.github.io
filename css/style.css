@@ -339,7 +339,7 @@ li:not(:first-child) .collapsible-header {
         display: inherit;
     }
     #slides {
-        max-height: 250px;
+        max-height: 300px;
     }
 }
 
@@ -364,8 +364,8 @@ li:not(:first-child) .collapsible-header {
     transform: translateY(-63px);
 }
 
-#about-us {
-    padding: 50px 0 0 0;
+.google-maps {
+    margin: 20px 0;
 }
 
 .profiles-section {
