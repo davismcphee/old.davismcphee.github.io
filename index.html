@@ -307,18 +307,18 @@
             </div>
             <hr>
             <div class="row">
-                <form class="col s12 l8 offset-l2" action="mailto:test@test.com">
+                <form id="contact-form" class="col s12 l8 offset-l2">
                     <div class="row">
                         <div class="input-field col s12 m6"> <i class="material-icons prefix">account_circle</i>
-                            <input id="name-iput" name="Name" type="text" class="validate">
-                            <label for="name-iput">Name</label>
+                            <input id="name-input" name="name" type="text" required>
+                            <label for="name-input">Name</label>
                         </div>
                         <div class="input-field col s12 m6"> <i class="material-icons prefix">email</i>
-                            <input id="email-iput" name="Email" type="email" class="validate">
-                            <label for="email-iput">Email</label>
+                            <input id="email-input" name="email" type="email" required>
+                            <label for="email-input">Email</label>
                         </div>
                         <div class="input-field col s12">
-                            <textarea id="message-textarea" name="Message" class="materialize-textarea"></textarea>
+                            <textarea id="message-textarea" name="message" class="materialize-textarea" required></textarea>
                             <label for="message-textarea">Message</label>
                         </div>
                         <input type="submit" class="waves-effect waves-light btn col s10 offset-s1" id="submit-input" value="SUBMIT"> </div>

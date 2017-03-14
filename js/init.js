@@ -47,5 +47,30 @@
             $("#audio-button i").toggleClass("hidden");
             $("#index-banner video").prop("muted") ? $("#index-banner video").prop("muted", false) : $("#index-banner video").prop("muted", true);
         });
+        $("#submit-input").parent().click(function (e) {
+            e.preventDefault();
+            var nameInput = document.getElementById("name-input");
+            var emailInput = document.getElementById("email-input");
+            var messageTextarea = document.getElementById("message-textarea");
+            if (nameInput.checkValidity() && emailInput.checkValidity() && messageTextarea.checkValidity) {
+                $.ajax({
+                    url: "php/mail.php"
+                    , type: "POST"
+                    , data: {
+                        name: $("#name-input").val()
+                        , email: $("#email-input").val()
+                        , message: $("#message-textarea").val()
+                    }
+                }).done(function () {
+                    $("#name-input").val("");
+                    $("#email-input").val("");
+                    $("#message-textarea").val("");
+                    Materialize.updateTextFields();
+                }).always(function (data) {
+                    Materialize.toast(data, 4000);
+                });
+            }
+            else Materialize.toast("Please make sure to fill all fields!", 4000);
+        });
     }); // end of document ready
 })(jQuery); // end of jQuery name space
