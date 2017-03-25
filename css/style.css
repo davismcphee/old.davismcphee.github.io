@@ -204,6 +204,12 @@ footer.page-footer {
     font-weight: 600 !important;
 }
 
+@media only screen and (max-width: 1050px) {
+    .navbar-fixed li a {
+        font-size: 0.9em !important;
+    }
+}
+
 .navbar-fixed li a {
     height: 45px;
     margin-left: 30px;
@@ -256,6 +262,12 @@ footer.page-footer {
 
 #slides {
     max-height: 600px;
+}
+
+@media only screen and (min-height: 1000px) {
+    #slides {
+        max-height: 800px;
+    }
 }
 
 #slides nav {
