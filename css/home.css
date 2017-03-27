@@ -1,0 +1,123 @@
+.split-display {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+    box-shadow: 0px 15px 50px -5px rgba(0, 0, 0, 0.2);
+}
+
+.split-display div {
+    text-align: center;
+    font-size: 1.4em;
+    height: 100%;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 1px solid #bababa;
+    width: 100%;
+    font-weight: lighter;
+}
+
+.split-display .coder {
+    color: #bababa;
+    padding: 60px 0;
+}
+
+.split-display .designer {
+    background-color: #bababa;
+    color: white;
+    padding: 30px 0;
+}
+
+.skills-box-container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.skills-box-container .skills-box {
+    width: 100%;
+    height: 200px;
+    float: left;
+    position: relative;
+    background-color: #bababa;
+    color: white;
+    box-sizing: border-box;
+    border: 0px solid;
+    transition: 0.25s;
+}
+
+.skills-box-container .skills-box:hover {
+    cursor: pointer;
+    border: 10px solid white;
+}
+
+.skills-box-container .skills-box:hover i {
+    font-size: 7em;
+}
+
+.skills-box-container .skills-box i {
+    font-size: 8em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.25s;
+}
+
+@media (min-width: 650px) {
+    .split-display div {
+        float: left;
+        padding: 60px 0 !important;
+        font-size: 2.6vw;
+    }
+    .split-display .coder {
+        width: 66%;
+    }
+    .split-display .designer {
+        width: 34%;
+    }
+    .skills-box-container .skills-box {
+        width: 50%;
+    }
+}
+
+@media (min-width: 960px) {
+    .split-display div {
+        font-size: 2vw;
+    }
+    .skills-box-container .skills-box {
+        width: 25%;
+    }
+}
+
+#html-skill {
+    background-color: #E54D26;
+}
+
+#css-skill {
+    background-color: #3D8FC6;
+}
+
+#js-skill {
+    background-color: #F0DB4F;
+}
+
+#php-skill {
+    background-color: #6181B6;
+}
+
+#python-skill {
+    background-color: #FFD845;
+}
+
+#java-skill {
+    background-color: #EA2D2E;
+}
+
+#csharp-skill {
+    background-color: #68217A;
+}
+
+#cplusplus-skill {
+    background-color: #9C033A;
+}
