@@ -17,6 +17,15 @@
     width: 100%;
     font-weight: lighter;
     text-decoration: none;
+    position: relative;
+}
+
+.split-display span {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .split-display .coder:hover {
@@ -25,7 +34,7 @@
 
 .split-display .coder {
     color: #bababa;
-    padding: 60px 0;
+    height: 120px;
 }
 
 .split-display .designer:hover {
@@ -36,7 +45,7 @@
 .split-display .designer {
     background-color: #bababa;
     color: white;
-    padding: 30px 0;
+    height: 60px;
 }
 
 .skills-box-container {
@@ -88,7 +97,8 @@
 @media (min-width: 650px) {
     .split-display a {
         float: left;
-        padding: 60px 0 !important;
+        padding: 70px 0 !important;
+        height: auto !important;
         font-size: 2.6vw;
     }
     .split-display .coder {
