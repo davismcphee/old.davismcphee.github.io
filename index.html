@@ -1,58 +1,33 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <title>Davis McPhee</title>
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-    <div class="top_bar"></div>
-    <a class="menu_toggle_button"><i class="ion-close-round"></i><i class="ion-navicon-round hidden"></i></a>
-    <nav class="main_menu">
-<!--        <div class="wires"></div>-->
-        <ul>
-            <li><a id="home" href="#">DAVIS MCPHEE</a><a class="background" href="#">DAVIS MCPHEE</a></li>
-            <li><a id="about_me" href="#">ABOUT ME</a><a class="background" href="#">ABOUT ME</a></li>
-            <li><a id="my_work" href="#">MY WORK</a><a class="background" href="#">MY WORK</a></li>
-            <li><a id="blog" href="#">BLOG</a><a class="background" href="#">BLOG</a></li>
-            <li><a id="contact" href="#">CONTACT</a><a class="background" href="#">CONTACT</a></li>
-            <li id="social_icons">
-                <a id="github" href="#"><i class="icon-social-github"></i></a>
-                <a id="twitter" href="#"><i class="icon-social-twitter"></i></a>
-                <a id="youtube" href="#"><i class="icon-social-youtube"></i></a>
-                <a id="linkedin" href="#"><i class="icon-social-linkedin"></i></a>
-            </li>
-        </ul>
-    </nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $(function() {
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="100 250 800 500" style="enable-background:new 0 0 1000 1000;" xml:space="preserve" class="logo-main">
+        <g>
+            <g>
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="455" y1="500.05" x2="806.5" y2="500.05">
+                    <stop  offset="0" style="stop-color:#3A90AC"/>
+                    <stop  offset="1.348937e-02" style="stop-color:#3C94B0"/>
+                    <stop  offset="0.1003" style="stop-color:#45A6C6"/>
+                    <stop  offset="0.2021" style="stop-color:#4CB4D7"/>
+                    <stop  offset="0.3288" style="stop-color:#50BFE2"/>
+                    <stop  offset="0.5065" style="stop-color:#53C4E9"/>
+                    <stop  offset="1" style="stop-color:#54C6EB"/>
+                </linearGradient>
+                <path class="line2" d="M585.5,682.2c-60.9,0-110.5-49.5-110.5-110.5V428.4c0-60.9,49.5-110.5,110.5-110.5
+                                       c60.9,0,110.5,49.6,110.5,110.5v143.3c0,60.9,49.6,110.5,110.5,110.5"/>
+            </g>
+            <path class="dot" d="M816.4,682.1h40"/>
+            <path class="line1" d="M143.5,682.2c60.9,0,110.5-49.5,110.5-110.5V428.4c0-60.9,49.6-110.5,110.5-110.5
+                                   c60.9,0,110.5,49.6,110.5,110.5v143.3c0,60.9-49.6,110.5-110.5,110.5"/>
+        </g>
+    </svg>
 
-            $("nav ul a").hover(function() {
-                if ($(this).closest("li").attr("id") === "social_icons") {
-                    $(".top_bar").css("background-color", $(this).css("color"));
-                } else {
-                    $(".top_bar").css("background-color", $(this).siblings(".background").css("color"));
-                }
-            }, function() {
-                $(".top_bar").css("background-color", "black");
-            });
-
-            $(".menu_toggle_button").click(function() {
-                $(".main_menu").toggleClass("hidden");
-                $(this).find("i").toggleClass("hidden");
-            });
-
-        });
-    </script>
 </body>
-
 </html>
