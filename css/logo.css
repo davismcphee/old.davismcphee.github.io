@@ -15,8 +15,6 @@ body {
     stroke: url(#SVGID_1_);
     stroke-width: 40;
     stroke-miterlimit: 10;
-    animation: line2_animation 3s 0.5s ease-in-out forwards;
-    stroke-dashoffset: 1000;
 }
 
 .logo-main .dot {
@@ -24,7 +22,6 @@ body {
     stroke: #54C6EB;
     stroke-width: 0;
     stroke-miterlimit: 10;
-    animation: dot_animation 0.01s 3.8s forwards;
 }
 
 .logo-main .line1 {
@@ -32,7 +29,19 @@ body {
     stroke: #54C6EB;
     stroke-width: 40;
     stroke-miterlimit: 10;
+}
+
+.logo-main.animated .line1 {
     animation: line1_animation 3s ease-in-out reverse; 
+}
+
+.logo-main.animated .line2 {
+    animation: line2_animation 3s 0.5s ease-in-out forwards;
+    stroke-dashoffset: 1000;
+}
+
+.logo-main.animated .dot {
+    animation: dot_animation 0.01s 3.8s forwards;
 }
 
 .logo-main .line1, .logo-main .line2 {

@@ -2,32 +2,71 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Untitled Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Davis McPhee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.12/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.12/spectre-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.12/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         viewBox="100 250 800 500" style="enable-background:new 0 0 1000 1000;" xml:space="preserve" class="logo-main">
-        <g>
-            <g>
-                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="455" y1="500.05" x2="806.5" y2="500.05">
-                    <stop  offset="0" style="stop-color:#3A90AC"/>
-                    <stop  offset="1.348937e-02" style="stop-color:#3C94B0"/>
-                    <stop  offset="0.1003" style="stop-color:#45A6C6"/>
-                    <stop  offset="0.2021" style="stop-color:#4CB4D7"/>
-                    <stop  offset="0.3288" style="stop-color:#50BFE2"/>
-                    <stop  offset="0.5065" style="stop-color:#53C4E9"/>
-                    <stop  offset="1" style="stop-color:#54C6EB"/>
-                </linearGradient>
-                <path class="line2" d="M585.5,682.2c-60.9,0-110.5-49.5-110.5-110.5V428.4c0-60.9,49.5-110.5,110.5-110.5
-                                       c60.9,0,110.5,49.6,110.5,110.5v143.3c0,60.9,49.6,110.5,110.5,110.5"/>
-            </g>
-            <path class="dot" d="M816.4,682.1h40"/>
-            <path class="line1" d="M143.5,682.2c60.9,0,110.5-49.5,110.5-110.5V428.4c0-60.9,49.6-110.5,110.5-110.5
-                                   c60.9,0,110.5,49.6,110.5,110.5v143.3c0,60.9-49.6,110.5-110.5,110.5"/>
-        </g>
-    </svg>
-
+    <div class="container">
+        <header class="navbar">
+            <section class="navbar-section hide-sm">
+                <a href="#" class="btn btn-link">About</a>
+                <a href="#" class="btn btn-link">Work</a>
+            </section>
+            <section class="navbar-center">
+                <a href="index.html" class="logo"><img src="img/logo.svg"></a>
+            </section>
+            <section class="navbar-section">
+                <a href="#" class="btn btn-link hide-sm">Blog</a>
+                <a href="#" class="btn btn-link hide-sm">Contact</a>
+                <div class="mobile-button show-sm"> <span></span> <span></span> <span></span> </div>
+            </section>                        
+        </header>
+    </div>
+    <ul class="nav nav-mobile show-sm text-center">
+        <li class="nav-item">
+            <a href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="#">Work</a>
+        </li>
+        <li class="nav-item">
+            <a href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+    <div class="divider padless"></div>
+    <div class="columns padded">
+        <div class="column text-center">
+            <div class="container">
+                <h1>Hi, my name is <mark>Davis</mark>.</h1>
+                <div class="divider mini"></div>
+                <h2>I'm a software developer from Halifax, Nova Scotia.</h2>
+                <a href="#" class="social-icon"><i class="icon-social-github"></i></a>
+                <a href="#"class="social-icon"><i class="icon-social-linkedin"></i></a>
+                <a href="#"class="social-icon"><i class="icon-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="divider padless"></div>
+        <div class="container">
+            <span>©2017 Davis McPhee | Made with <i class="icon-heart"></i> and <a href="#">Spectre.css</a>.</span>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(".mobile-button").click(function() {
+            $(".nav-mobile").toggleClass("open");
+            $(this).toggleClass("open");
+        });
+    </script>
 </body>
 </html>

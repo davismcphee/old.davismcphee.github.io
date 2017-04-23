@@ -1,0 +1,190 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #EEE5E5;
+    color: #1a1a1a;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+}
+
+a {
+    color: blue;
+}
+
+.nav-mobile a, .navbar a {
+    color: #1a1a1a !important;
+    font-size: 1.8rem !important;
+}
+
+.nav-mobile a:hover, .navbar a:hover {
+    text-decoration: line-through !important;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0;
+}
+
+.logo {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.navbar-section a:not(:first-of-type) {
+    margin-left: 7rem;
+}
+
+.divider {
+    border-color: #ded3d3 !important;
+    border-bottom: 1px solid white !important;
+}
+
+.divider.padless {
+    margin: 0;
+}
+
+.divider[data-content]::before {
+    background-color: #ded3d3;
+    color: white;
+}
+
+@media screen and (max-width: 680px) {
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .navbar-section a {
+        font-size: 1.6rem !important;
+    }
+    .navbar-section a:not(:first-of-type) {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .navbar-section a:not(:first-of-type) {
+        margin-left: 4rem;
+    }
+}
+
+.mobile-button {
+    width: 4rem;
+}
+
+.mobile-button:hover {
+    cursor: pointer;
+}
+
+.mobile-button.open span:nth-of-type(1) {
+    width: 80%;
+}
+
+.mobile-button.open span:nth-of-type(2) {
+    margin-left: 40%;
+    width: 70%;
+}
+
+.mobile-button.open span:nth-of-type(3) {
+    width: 60%;
+}
+
+.mobile-button span {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 1px;
+    margin: 12px 0;
+    background-color: #1a1a1a;
+    transition: 0.5s;
+}
+
+.nav-mobile {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0;
+    background-color: #1a1a1a;
+}
+
+.nav-mobile a {
+    color: #EEE5E5 !important;
+}
+
+.nav-mobile.open {
+    height: 15rem;
+}
+
+.divider.mini {
+    border-color: inherit !important;
+    width: 3rem;
+    border-top: none;
+    border-bottom: 0.3rem solid !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 2.2rem;
+}
+
+mark {
+    color: inherit;
+}
+
+.columns.padded {
+    padding: 10rem 0;
+}
+
+.social-icon {
+    display: inline-flex;
+    margin-top: 6rem;
+    font-size: 4rem !important;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a
+}
+
+.social-icon:hover {
+    text-decoration: none;
+    background-color: #1a1a1a;
+    color: #EEE5E5 !important;
+}
+
+.social-icon:not(:first-of-type) {
+    margin-left: 3rem;
+}
+
+@media screen and (max-width: 840px) {
+    .social-icon {
+        font-size: 3rem !important;
+    }
+    .social-icon:not(:first-of-type) {
+        margin-left: 2rem;
+    }
+}
+
+mark {
+    background-color: rgb(255, 247, 225);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+footer .container {
+    padding: 1rem 0;
+}
+
+footer .icon-heart {
+    font-weight: bold;
+    color: red;
+}
