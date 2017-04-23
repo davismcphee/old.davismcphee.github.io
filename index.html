@@ -46,21 +46,23 @@
     <div class="content">
         <div id="landing-section">
             <ul id="landing-scene">
-                <li class="layer" data-depth="0.08">
+                <li class="layer" data-depth="0.2">
                     <div class="background"></div>
                 </li>
-                <li class="layer text-center scene-text" data-depth="0.02">
+                <li class="layer text-center scene-text" data-depth="0.1">
                     <div class="container">
                         <h1>Hi, my name is Davis.</h1>
                         <h2>I'm a software developer from Halifax, Nova Scotia.</h2>
-                        <!--
-                    <a href="#" class="social-icon"><i class="icon-social-github"></i></a>
-                    <a href="#"class="social-icon"><i class="icon-social-linkedin"></i></a>
-                    <a href="#"class="social-icon"><i class="icon-envelope"></i></a>
--->
                     </div>
                 </li>
             </ul>
+        </div>
+        <div id="social-section" class="columns">
+            <div class="column text-center">
+                <a href="#" class="social-icon"><i class="icon-social-github"></i></a>
+                <a href="#"class="social-icon"><i class="icon-social-linkedin"></i></a>
+                <a href="#"class="social-icon"><i class="icon-envelope"></i></a>
+            </div>
         </div>
         <div id="clean-code-section" class="columns padded">
             <div class="container">
@@ -88,8 +90,8 @@
                 $(".nav-mobile").toggleClass("open");
                 $(this).toggleClass("open");
             });
-            $("#landing-section").parallax();
-
+            var scene = $("#landing-section").parallax();
+            scene.parallax('pointerEvents', false);
         });
     </script>
 </body>

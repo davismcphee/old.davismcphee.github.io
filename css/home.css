@@ -24,6 +24,7 @@
     overflow: hidden;
 }
 
+/*
 #landing-scene::after {
     content: "";
     position: absolute;
@@ -34,6 +35,7 @@
     background-color: rgba(181, 170, 170, 0.18);
     z-index: 0;
 }
+*/
 
 .layer {
     height: 100%;
@@ -97,4 +99,20 @@
     .text h3 {
         padding: 5% 0 5% 0;
     }
+}
+
+#social-section {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+    color: white;
+}
+
+#social-section .social-icon {
+    color: #EEE5E5;
+    border-color: #EEE5E5;
+}
+
+#social-section .social-icon:hover {
+    color: #1a1a1a !important;
+    background-color: #EEE5E5;
 }
