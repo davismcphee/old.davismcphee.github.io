@@ -1,0 +1,88 @@
+#landing-section {
+    color: ghostwhite;
+    background-image: url("../img/halifax_background.jpg");
+    background-position: 50% 30%;
+    background-size: cover;
+}
+
+#landing-section .background {
+    background-image: url("../img/halifax_background.jpg");
+    background-position: 50% 30%;
+    background-size: cover;
+    width: 105%;
+    height: 105%;
+    position: absolute;
+    top: -2.5%;
+    left: -2.5%;
+}
+
+#landing-scene {
+    margin: 0;
+    width: 100%;
+    height: 70rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.layer {
+    height: 100%;
+    margin: 0;
+}
+
+.scene-text {
+    padding-top: 10rem;
+    opacity: 1;
+    animation: 1s fade-in linear;
+    z-index: 1;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media screen and (max-width: 1500px) {
+    #landing-scene {
+        height: 60rem;
+    }
+    .scene-text {
+        padding-top: 7rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #landing-scene {
+        height: 50rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+     #landing-scene {
+        height: 40rem;
+    }
+    .scene-text {
+        padding-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #landing-scene {
+        height: 35rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+     #landing-scene {
+        height: 30rem;
+    }
+    #landing-scene::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 0;
+    }
+}

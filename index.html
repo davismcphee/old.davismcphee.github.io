@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.2.12/spectre-exp.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -42,17 +43,22 @@
             <a href="#">Contact</a>
         </li>
     </ul>
-    <div class="divider padless"></div>
-    <div class="columns padded">
-        <div class="column text-center">
-            <div class="container">
-                <h1>Hi, my name is <mark>Davis</mark>.</h1>
-                <div class="divider mini"></div>
-                <h2>I'm a software developer from Halifax, Nova Scotia.</h2>
-                <a href="#" class="social-icon"><i class="icon-social-github"></i></a>
-                <a href="#"class="social-icon"><i class="icon-social-linkedin"></i></a>
-                <a href="#"class="social-icon"><i class="icon-envelope"></i></a>
-            </div>
+    <div class="content">
+        <div id="landing-section">
+            <ul id="landing-scene">
+                <li class="layer" data-depth="0.08"><div class="background"></div></li>
+                <li class="layer text-center scene-text" data-depth="0.02">
+                    <div class="container">
+                    <h1>Hi, my name is Davis.</h1>
+                    <h2>I'm a software developer from Halifax, Nova Scotia.</h2>
+<!--
+                    <a href="#" class="social-icon"><i class="icon-social-github"></i></a>
+                    <a href="#"class="social-icon"><i class="icon-social-linkedin"></i></a>
+                    <a href="#"class="social-icon"><i class="icon-envelope"></i></a>
+-->
+                </div>
+                </li>
+            </ul>
         </div>
     </div>
     <footer>
@@ -62,10 +68,16 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js"></script>
     <script>
-        $(".mobile-button").click(function() {
-            $(".nav-mobile").toggleClass("open");
-            $(this).toggleClass("open");
+        $(function() {
+            
+            $(".mobile-button").click(function() {
+                $(".nav-mobile").toggleClass("open");
+                $(this).toggleClass("open");
+            });
+            $("#landing-section").parallax();
+            
         });
     </script>
 </body>
