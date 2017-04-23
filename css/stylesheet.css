@@ -14,7 +14,7 @@ body {
 
 @media screen and (max-width: 1280px) {
     h1 {
-        font-size: 4rem;  
+        font-size: 4rem;
     }
     h2 {
         font-size: 3rem;
@@ -38,13 +38,20 @@ a {
     color: blue;
 }
 
-.nav-mobile a, .navbar a {
+.nav-mobile a,
+.navbar a {
     color: #1a1a1a !important;
     font-size: 1.8rem !important;
 }
 
-.nav-mobile a:hover, .navbar a:hover {
+.nav-mobile a:hover,
+.navbar a:hover {
     text-decoration: line-through !important;
+}
+
+.columns .container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -166,7 +173,7 @@ mark {
 }
 
 .columns.padded {
-    padding: 10rem 0;
+    padding: 5% 0;
 }
 
 .social-icon {
@@ -214,4 +221,10 @@ footer span {
 footer .icon-heart {
     font-weight: bold;
     color: red;
+}
+
+.valign {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
