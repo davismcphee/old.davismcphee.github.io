@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -138,7 +139,6 @@ a {
     }
     .container {
         width: 90%;
-        margin-left: 5%;
     }
     .navbar-section a {
         font-size: 1.8rem !important;
@@ -424,6 +424,10 @@ footer .icon-heart {
 
 .modal-body {
     max-height: 100% !important;
+}
+
+.modal-header {
+    padding-bottom: 0 !important;
 }
 
 kbd {
