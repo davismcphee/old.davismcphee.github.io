@@ -301,10 +301,15 @@ footer .icon-heart {
     .text-image-section h3 {
         padding: 5rem 0 !important;
     }
+/*
     .text-image-section .column:first-of-type h3 {
         padding-top: 0 !important;
     }
     .text-image-section .column:nth-of-type(2) h3 {
+        padding-bottom: 0 !important;
+    }
+*/
+    .text-image-section .column h3 {
         padding-bottom: 0 !important;
     }
     .text-image-section .text {
@@ -321,5 +326,8 @@ footer .icon-heart {
     }
     .text-image-section {
         padding: inherit;
+    }
+    .text-image-section .columns:nth-child(odd) .column:first-of-type {
+        order: 2;
     }
 }
