@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,400,700" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <header class="navbar">
+    <div class="header-background">
+        <header class="navbar container">
             <section class="navbar-section hide-sm">
                 <a href="#" class="btn btn-link">About</a>
                 <a href="#" class="btn btn-link">Work</a>
             </section>
             <section class="navbar-center">
-                <a href="index.html" class="logo"><img src="img/logo.svg"></a>
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
             </section>
             <section class="navbar-section">
                 <a href="#" class="btn btn-link hide-sm">Blog</a>
@@ -44,6 +45,7 @@
         </li>
     </ul>
     <div class="content">
+        <!--
         <div id="landing-section">
             <ul id="landing-scene">
                 <li class="layer" data-depth="0.2">
@@ -57,32 +59,64 @@
                 </li>
             </ul>
         </div>
+-->
+
+        <div class="columns" id="landing-area">
+            <div class="container">
+                <div class="column text-center">
+                    <h1>Hi, my name is Davis.</h1>
+                    <h2>I'm a software developer from Halifax, Nova Scotia.</h2>
+                    <object type="image/svg+xml" data="img/novascotia.svg" class="valign background-image"></object>
+                </div>
+            </div>
+        </div>
         <div id="social-section" class="columns">
             <div class="column text-center">
                 <a href="#" class="social-icon"><i class="icon-social-github"></i></a>
-                <a href="#"class="social-icon"><i class="icon-social-linkedin"></i></a>
-                <a href="#"class="social-icon"><i class="icon-envelope"></i></a>
+                <a href="#" class="social-icon"><i class="icon-social-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="icon-envelope"></i></a>
             </div>
         </div>
-        <div id="clean-code-section" class="columns padded">
-            <div class="container">
-                <div class="column col-md-12 text">
-                    <h3 class="valign">I believe clean code and minimal design help create a better experience for both users and developers.</h3>
+        <div class="text-image-section">
+            <div class="columns">
+                <div class="container">
+                    <div class="column col-md-12 text">
+                        <h3 class="valign">I am a recent graduate of the IT program at Nova Scotia Community College in the concentration of application development.</h3>
+                    </div>
+                    <div class="column col-md-12 image">
+                        <object type="image/svg+xml" data="img/nscc.svg" class="valign"></object>
+                    </div>
                 </div>
-                <div class="column col-md-12 image">
-                    <object type="image/svg+xml" data="img/computer.svg" class="valign"></object>
+            </div>
+            <div class="columns">
+                <div class="container">
+                    <div class="column col-md-12 image">
+                        <object type="image/svg+xml" data="img/computer.svg" class="valign"></object>
+                    </div>
+                    <div class="column col-md-12 text">
+                        <h3 class="valign">Throughout my time at NSCC, I developed a passion for programming and web design. I believe that clean code and minimal layouts create a better experience for both developers and users.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="container">
+                    <div class="column col-md-12 text">
+                        <h3 class="valign">In life I require few things apart from my family, a career doing something I love, and a good cup of coffee. Feel free to stay a while and <a href="#">see what I've been working on</a>.</h3>
+                    </div>
+                    <div class="column col-md-12 image">
+                        <object type="image/svg+xml" data="img/coffee.svg" class="valign"></object>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <div class="divider padless"></div>
         <div class="container">
-            <span>©2017 Davis McPhee | Made with <i class="icon-heart"></i> and <a href="#">Spectre.css</a>.</span>
+            <span>©2017 Davis McPhee | Made with <i class="icon-heart"></i> and <a href="#">Spectre.css</a> | Free vector design by <a href="https://www.Vecteezy.com">Vecteezy.com</a></span>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
     <script>
         $(function() {
 
@@ -90,8 +124,11 @@
                 $(".nav-mobile").toggleClass("open");
                 $(this).toggleClass("open");
             });
-            var scene = $("#landing-section").parallax();
-            scene.parallax('pointerEvents', false);
+            $('.logo').tilt({
+                perspective: 100,
+                glare: true,
+                maxGlare: .2
+            })
         });
     </script>
 </body>

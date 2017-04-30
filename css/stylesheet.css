@@ -8,11 +8,35 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #EEE5E5;
+    background-color: white;
     color: #1a1a1a;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.content {
+    flex: 1;
+}
+
+a {
+    color: blue;
+}
+
+.nav-mobile a,
+.navbar a {
+    color: #1a1a1a !important;
+    font-size: 2.3rem !important;
+}
+
+.nav-mobile a:hover,
+.navbar a:hover {
+    color: white !important;
 }
 
 @media screen and (max-width: 1280px) {
+    .nav-mobile a,
+    .navbar a {
+        font-size: 2rem !important;
+    }
     h1 {
         font-size: 4rem;
     }
@@ -34,25 +58,10 @@ body {
     h3 {
         font-size: 2rem;
     }
-}
-
-.content {
-    flex: 1;
-}
-
-a {
-    color: blue;
-}
-
-.nav-mobile a,
-.navbar a {
-    color: #1a1a1a !important;
-    font-size: 1.8rem !important;
-}
-
-.nav-mobile a:hover,
-.navbar a:hover {
-    text-decoration: line-through !important;
+    .logo {
+        width: 6.5rem !important;
+        height: 6.5rem !important;
+    }
 }
 
 .columns .container {
@@ -62,9 +71,9 @@ a {
 
 .container {
     position: relative;
-    width: 80vw;
-    margin-left: 10vw;
+    width: 80%;
     padding: 0;
+    max-width: 1400px;
 }
 
 .container.left {
@@ -73,7 +82,7 @@ a {
 
 .container.right {
     width: auto;
-    margin-right: 10vw;
+    margin-right: 10%;
 }
 
 .logo {
@@ -87,8 +96,8 @@ a {
 }
 
 .divider {
-    border-color: #ded3d3 !important;
-    border-bottom: 1px solid white !important;
+    border-color: #1a1a1a !important;
+
 }
 
 .divider.padless {
@@ -105,11 +114,11 @@ a {
         font-size: 1rem !important;
     }
     .container {
-        width: 90vw;
-        margin-left: 5vw;
+        width: 90%;
+        margin-left: 5%;
     }
     .navbar-section a {
-        font-size: 1.6rem !important;
+        font-size: 1.8rem !important;
     }
     .navbar-section a:not(:first-of-type) {
         margin-left: 3rem;
@@ -156,11 +165,28 @@ a {
 }
 
 .nav-mobile a {
-    color: #EEE5E5 !important;
+    color: white !important;
 }
 
 .nav-mobile.open {
-    height: 15rem;
+    height: 160px;
+}
+
+.nav-mobile li  {
+    height: 40px;
+    line-height: 26px;
+    margin: 0;
+}
+
+.nav-mobile a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-mobile a:hover {
+    background-color: white;
+    color: #1a1a1a !important;
 }
 
 .divider.mini {
@@ -194,7 +220,7 @@ mark {
 .social-icon:hover {
     text-decoration: none;
     background-color: #1a1a1a;
-    color: #EEE5E5 !important;
+    color: white !important;
 }
 
 .social-icon:not(:first-of-type) {
@@ -215,12 +241,17 @@ mark {
 }
 
 footer {
+    padding: 1rem 0;
     font-size: 1.6rem;
+    background-color: #e6e6e6;
+    line-height: 1;
 }
 
-footer span {
-    display: block;
-    padding: 1rem 0;
+@media screen and (max-width: 600px) {
+    footer {
+        text-align: center;
+        font-size: 1.4rem;
+    }
 }
 
 footer .icon-heart {
@@ -232,4 +263,63 @@ footer .icon-heart {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.image object {
+    height: 45rem;
+    max-width: 100%;
+}
+
+.text-image-section h3 {
+    padding: 0 !important;
+}
+
+.text-image-section .column:first-of-type {
+    padding-right: 2rem;
+}
+
+.text-image-section .column:nth-of-type(2) {
+    padding-left: 2rem;
+}
+
+.text-image-section .columns {
+    padding: 5rem 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .image object {
+        height: auto;
+        max-height: 45rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .image object {
+        max-height: inherit;
+    }
+    .text-image-section h3 {
+        padding: 5rem 0 !important;
+    }
+    .text-image-section .column:first-of-type h3 {
+        padding-top: 0 !important;
+    }
+    .text-image-section .column:nth-of-type(2) h3 {
+        padding-bottom: 0 !important;
+    }
+    .text-image-section .text {
+        text-align: center !important;
+    }
+    .text-image-section .column:first-of-type {
+        padding-right: 2rem;
+    }
+    .text-image-section .column:nth-of-type(2) {
+        padding-left: 2rem;
+    }
+    .text-image-section .column {
+        padding: inherit !important;
+    }
+    .text-image-section {
+        padding: inherit;
+    }
 }

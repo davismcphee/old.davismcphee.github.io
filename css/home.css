@@ -108,11 +108,62 @@
 }
 
 #social-section .social-icon {
-    color: #EEE5E5;
-    border-color: #EEE5E5;
+    color: white;
+    border-color: white;
 }
 
 #social-section .social-icon:hover {
     color: #1a1a1a !important;
-    background-color: #EEE5E5;
+    background-color: white;
+}
+
+#landing-area {
+    padding: 20rem 0 20rem 0;
+    background-color: #43AA8B;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #landing-area {
+        padding: 10rem 0 15rem 0;
+    }
+}
+
+.header-background {
+    background-color: #43AA8B;
+}
+
+#landing-area .background-image {
+    height: 40rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+    #landing-area .background-image {
+        height: 30rem;
+    }
+}
+
+#landing-area h1, #landing-area h2 {
+    position: relative;
+    z-index: 1;
+}
+
+
+.text-image-section .columns:nth-child(even) {
+    color: white;
+}
+
+.text-image-section .columns:nth-child(2) {
+    background-color: #43AA8B;
+}
+
+.text-image-section  .column:last-of-type {
+    text-align: right;
+}
+
+.js-tilt-glare {
+    border-radius: 50px !important;
 }

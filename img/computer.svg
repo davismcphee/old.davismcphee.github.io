@@ -2,7 +2,7 @@
     <title>Computer</title>
     <style type="text/css">
         * {
-        fill: #1a1a1a;
+        fill: white;
         }
     </style>
         <g id="main-layer" data-name="main-layer">
