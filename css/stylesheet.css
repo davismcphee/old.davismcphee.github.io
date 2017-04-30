@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+.header-background {
+    width: 100%;
+}
+
 .content {
     flex: 1;
 }
@@ -32,6 +36,24 @@ a {
 .navbar a:hover {
     color: white !important;
 }
+
+/*
+@media screen and (max-width: 1280px) {
+    .nav-mobile a,
+    .navbar a {
+        font-size: 2rem !important;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+*/
 
 @media screen and (max-width: 1280px) {
     .nav-mobile a,
@@ -216,10 +238,10 @@ mark {
     border-radius: 5rem;
     border: 2px solid #1a1a1a;
     color: #1a1a1a;
+    text-decoration: none !important;
 }
 
 .social-icon:hover {
-    text-decoration: none;
     background-color: #1a1a1a;
     color: white !important;
 }
@@ -311,7 +333,7 @@ footer .icon-heart {
     }
 */
     .text-image-section .column h3 {
-        padding-bottom: 0 !important;
+        padding: 5rem 0 0 0 !important;
     }
     .text-image-section .text {
         text-align: center !important;
@@ -331,4 +353,82 @@ footer .icon-heart {
     .text-image-section .columns:nth-child(odd) .column:first-of-type {
         order: 2;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .text-image-section h3 {
+        text-align: left;
+    }
+    .text-image-section .columns {
+        padding: 3rem 0 !important;
+    }
+    .text-image-section .column h3 {
+        padding: 2.5rem 0 0 0 !important;
+    }
+}
+
+.card {
+    border-color: #d8d8d8;
+}
+
+.card-header .card-title {
+    color: #1a1a1a;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card-header .card-subtitle {
+    color: #3FA083;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card-body {
+    padding-top: 0 !important;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.card-footer {
+    padding: 0  1.5rem 1.5rem 1.5rem !important;
+}
+
+/*
+@media screen and (max-width: 840px) {
+    .card-header .card-title {
+        text-align: center;
+    }
+    .card-header .card-subtitle {
+        text-align: center;
+    }
+}
+*/
+
+.card-footer .btn {
+    background-color:  #43AA8B;
+    border-color: #3FA083 !important;
+}
+
+.card-footer .btn:hover {
+    background-color: #3FA083;
+}
+
+.card-image:hover {
+    cursor: pointer;
+}
+
+.modal-container {
+    max-width: 100% !important;
+}
+
+.modal-body {
+    max-height: 100% !important;
+}
+
+kbd {
+    background-color: #43AA8B;
+    border: 1px solid #3FA083;
+    font-size: 1.5rem;
+    display: inline;
 }

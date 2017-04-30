@@ -160,7 +160,13 @@
     background-color: #43AA8B;
 }
 
+/*
 .text-image-section  .column:last-of-type {
+    text-align: right;
+}
+*/
+
+.text-image-section  .image:last-of-type {
     text-align: right;
 }
 
