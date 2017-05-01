@@ -97,7 +97,7 @@ a {
     position: relative;
     width: 80%;
     padding: 0;
-    max-width: 1400px;
+    max-width: 1280px;
 }
 
 .container.left {
@@ -369,6 +369,7 @@ footer .icon-heart {
 
 .card {
     border-color: #d8d8d8;
+    overflow: hidden;
 }
 
 .card-header .card-title {
@@ -410,12 +411,29 @@ footer .icon-heart {
     border-color: #3FA083 !important;
 }
 
-.card-footer .btn:hover {
+.card-footer .btn:hover, .card-footer .btn:active, .card-footer .btn:focus {
     background-color: #3FA083;
+}
+
+.card h5 {
+    margin-bottom: 0.5rem;
+}
+
+.card-image img {
+    border-radius: 0 !important;
 }
 
 .card-image:hover {
     cursor: pointer;
+}
+
+.card ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.card li {
+    margin-top: 0.2rem;
 }
 
 .modal-container {
@@ -435,4 +453,17 @@ kbd {
     border: 1px solid #3FA083;
     font-size: 1.5rem;
     display: inline;
+    line-height: inherit;
+}
+
+.code code {
+    padding: 0 1rem;
+    background-color: #efefef;
+    line-height: normal;
+    font-size: 1.6rem;
+}
+
+pre {
+    margin: 0;
+    margin-bottom: 1.5rem;
 }
