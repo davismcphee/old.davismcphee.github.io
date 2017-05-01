@@ -3,7 +3,7 @@ $(function() {
     //strings
     var RESPONSE_TYPE = "token";
     var CLIENT_ID = "c4463bda-e58c-4de5-9c80-532c36b3f591";
-    var REDIRECT_URI = "index.html";
+    var REDIRECT_URI = "http://davismcphee.com/apps/TwoNote/index.html";
     var SCOPE = "office.onenote_update";
     var APPLICATION_ID = "WLID-000000004C1C6B30";
     var hidden = "hidden";
