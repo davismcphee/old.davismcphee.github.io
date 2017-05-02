@@ -1,0 +1,363 @@
+<!--
+/* Font Definitions */
+
+@font-face {
+    font-family: Wingdings;
+    panose-1: 5 0 0 0 0 0 0 0 0 0;
+}
+
+@font-face {
+    font-family: "Cambria Math";
+    panose-1: 2 4 5 3 5 4 6 3 2 4;
+}
+
+@font-face {
+    font-family: Calibri;
+    panose-1: 2 15 5 2 2 2 4 3 2 4;
+}
+
+@font-face {
+    font-family: "Calibri Light";
+    panose-1: 2 15 3 2 2 2 4 3 2 4;
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    panose-1: 2 11 5 2 2 2 2 2 2 4;
+}
+
+#resume-section {
+    width: 100%;
+    overflow-x: auto;
+}
+
+#resume-section .columns {
+    width: 100%;
+    margin: 0;
+}
+
+#resume-section .download-resume {
+    margin-bottom: 1rem;
+}
+
+.WordSection1 {
+    min-width: 500px;
+}
+
+.WordSection1 {
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid #d8d8d8;
+    border-radius: 2px;
+    margin: 0 0 1rem 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact {
+    padding-top: 0;
+}
+
+.resume {
+    padding: 0;
+}
+
+#contact-section .title {
+    margin-top: 1rem;
+    padding: 0;
+}
+
+#contact-section .title h3 {
+    margin-bottom: 0;
+}
+
+#contact-section form {
+    margin-top: 0;
+}
+
+/* Style Definitions */
+
+.WordSection1 p.MsoNormal,
+.WordSection1 li.MsoNormal,
+.WordSection1 div.MsoNormal {
+    margin-top: 6.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-bottom: .0001pt;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.WordSection1 h1 {
+    mso-style-link: "Heading 1 Char";
+    margin-top: 6.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-bottom: .0001pt;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+    color: #598392;
+    text-transform: uppercase;
+    letter-spacing: 2.0pt;
+    font-weight: bold;
+    margin-top: 1.2rem;
+}
+
+.WordSection1 h2 {
+    mso-style-link: "Heading 2 Char";
+    margin-top: 6.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-bottom: .0001pt;
+    text-align: right;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+    color: #C45911;
+    font-weight: bold;
+}
+
+.WordSection1 h3 {
+    mso-style-link: "Heading 3 Char";
+    margin: 0cm;
+    margin-bottom: .0001pt;
+    text-align: right;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+    color: #262626;
+    font-weight: normal;
+}
+
+.WordSection1 p.MsoHeader,
+.WordSection1 li.MsoHeader,
+.WordSection1 div.MsoHeader {
+    mso-style-link: "Header Char";
+    margin: 0cm;
+    margin-bottom: .0001pt;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.WordSection1 p.MsoFooter,
+.WordSection1 li.MsoFooter,
+.WordSection1 div.MsoFooter {
+    mso-style-link: "Footer Char";
+    margin: 0cm;
+    margin-bottom: .0001pt;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.WordSection1 a:link,
+.WordSection1 span.MsoHyperlink {
+    color: #0563C1;
+    text-decoration: underline;
+}
+
+.WordSection1 a:visited,
+.WordSection1 span.MsoHyperlinkFollowed {
+    color: #954F72;
+    text-decoration: underline;
+}
+
+.WordSection1 p {
+    margin-right: 0cm;
+    margin-left: 0cm;
+    font-size: 12.0pt;
+    font-family: "Times New Roman", serif;
+}
+
+.WordSection1 p.MsoListParagraph,
+.WordSection1 li.MsoListParagraph,
+.WordSection1 div.MsoListParagraph {
+    margin-top: 6.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 36.0pt;
+    margin-bottom: .0001pt;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.WordSection1 p.MsoListParagraphCxSpFirst,
+.WordSection1 li.MsoListParagraphCxSpFirst,
+.WordSection1 div.MsoListParagraphCxSpFirst {
+    margin-top: 6.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 36.0pt;
+    margin-bottom: .0001pt;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.WordSection1 p.MsoListParagraphCxSpMiddle,
+.WordSection1 li.MsoListParagraphCxSpMiddle,
+.WordSection1 div.MsoListParagraphCxSpMiddle {
+    margin-top: 0cm;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 36.0pt;
+    margin-bottom: .0001pt;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.WordSection1 p.MsoListParagraphCxSpLast,
+.WordSection1 li.MsoListParagraphCxSpLast,
+.WordSection1 div.MsoListParagraphCxSpLast {
+    margin-top: 0cm;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 36.0pt;
+    margin-bottom: .0001pt;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.WordSection1 p.Name,
+.WordSection1 li.Name,
+.WordSection1 div.Name {
+    mso-style-name: Name;
+    margin-top: 6.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-bottom: .0001pt;
+    font-size: 28.0pt;
+    font-family: "Century Gothic", sans-serif;
+    color: #598392;
+    letter-spacing: 3.0pt;
+}
+
+.WordSection1 p.JobTitle,
+.WordSection1 li.JobTitle,
+.WordSection1 div.JobTitle {
+    mso-style-name: "Job Title";
+    margin: 0cm;
+    margin-bottom: .0001pt;
+    font-size: 14.0pt;
+    font-family: "Century Gothic", sans-serif;
+    color: #124559;
+    letter-spacing: 2.0pt;
+}
+
+.WordSection1 span.Heading1Char {
+    mso-style-name: "Heading 1 Char";
+    mso-style-link: "Heading 1";
+    font-family: "Century Gothic", sans-serif;
+    color: #598392;
+    text-transform: uppercase;
+    letter-spacing: 2.0pt;
+    font-weight: bold;
+}
+
+.WordSection1 span.Heading2Char {
+    mso-style-name: "Heading 2 Char";
+    mso-style-link: "Heading 2";
+    font-family: "Century Gothic", sans-serif;
+    color: #C45911;
+    font-weight: bold;
+}
+
+.WordSection1 span.Heading3Char {
+    mso-style-name: "Heading 3 Char";
+    mso-style-link: "Heading 3";
+    font-family: "Century Gothic", sans-serif;
+    color: #262626;
+}
+
+.WordSection1 p.Year,
+.WordSection1 li.Year,
+.WordSection1 div.Year {
+    mso-style-name: Year;
+    margin: 0cm;
+    margin-bottom: .0001pt;
+    text-align: right;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+    color: #262626;
+}
+
+.WordSection1 p.BodyText,
+.WordSection1 li.BodyText,
+.WordSection1 div.BodyText {
+    mso-style-name: BodyText;
+    margin-top: 6.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-bottom: .0001pt;
+    font-size: 11.0pt;
+    font-family: "Century Gothic", sans-serif;
+    color: #262626;
+}
+
+.WordSection1 p.Contactinfo,
+.WordSection1 li.Contactinfo,
+.WordSection1 div.Contactinfo {
+    mso-style-name: "Contact info";
+    margin-top: 6.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-bottom: .0001pt;
+    font-size: 9.0pt;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.WordSection1 span.BoldExpanded {
+    mso-style-name: "Bold Expanded";
+    color: #124559;
+    letter-spacing: 2.0pt;
+    font-weight: bold;
+}
+
+.WordSection1 span.HeaderChar {
+    mso-style-name: "Header Char";
+    mso-style-link: Header;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.WordSection1 span.FooterChar {
+    mso-style-name: "Footer Char";
+    mso-style-link: Footer;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.WordSection1 .MsoChpDefault {
+    font-family: "Calibri", sans-serif;
+}
+
+.WordSection1 .MsoPapDefault {
+    margin-bottom: 8.0pt;
+    line-height: 107%;
+}
+
+
+/* Page Definitions */
+
+@page WordSection1 {
+    size: 612.0pt 792.0pt;
+    margin: 36.0pt 36.0pt 36.0pt 36.0pt;
+}
+
+.WordSection1 div.WordSection1 {
+    page: WordSection1;
+}
+
+
+/* List Definitions */
+
+.WordSection1 ol {
+    margin-bottom: 0cm;
+}
+
+.WordSection1 ul {
+    margin-bottom: 0cm;
+}
+
+-->

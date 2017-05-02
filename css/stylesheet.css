@@ -31,6 +31,8 @@ a {
 .navbar a {
     color: #1a1a1a !important;
     font-size: 2.3rem !important;
+    font-weight: 300;
+    
 }
 
 .nav-mobile a:hover,
@@ -295,6 +297,7 @@ footer .icon-heart {
 
 .text-image-section h3 {
     padding: 0 !important;
+    font-weight: 100;
 }
 
 .text-image-section .column:first-of-type {
@@ -406,13 +409,37 @@ footer .icon-heart {
 }
 */
 
-.card-footer .btn {
-    background-color:  #43AA8B;
+.card-footer .btn, form .btn {
+    background-color:  #43AA8B !important;
     border-color: #3FA083 !important;
 }
 
-.card-footer .btn:hover, .card-footer .btn:active, .card-footer .btn:focus {
-    background-color: #3FA083;
+.card-footer .btn:hover, .card-footer .btn:active, .card-footer .btn:focus,
+form .btn:hover, form .btn:active, form .btn:focus {
+    background-color: #3FA083 !important;
+}
+
+.form-input:focus {
+    border-color: #3FA083 !important;
+}
+
+.form-input {
+    width: 100% !important;
+}
+
+form label {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+form input[type="submit"] {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 0.6rem;
+}
+
+form {
+    margin-bottom: 1rem;
 }
 
 .card h5 {
@@ -466,4 +493,8 @@ kbd {
 pre {
     margin: 0;
     margin-bottom: 1.5rem;
+}
+
+#landing-area h1, #landing-area h2 {
+    font-weight: 100;
 }
