@@ -498,3 +498,8 @@ pre {
 #landing-area h1, #landing-area h2 {
     font-weight: 100;
 }
+
+li {
+    list-style-position: outside;
+    margin-left: 1rem;
+}
