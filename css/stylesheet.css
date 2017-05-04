@@ -499,7 +499,7 @@ pre {
     font-weight: 100;
 }
 
-li {
+.card li {
     list-style-position: outside;
     margin-left: 1rem;
 }
