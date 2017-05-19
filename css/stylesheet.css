@@ -297,7 +297,8 @@ footer .icon-heart {
 
 .text-image-section h3 {
     padding: 0 !important;
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 2.6rem;
 }
 
 .text-image-section .column:first-of-type {
@@ -306,6 +307,10 @@ footer .icon-heart {
 
 .text-image-section .column:nth-of-type(2) {
     padding-left: 2rem;
+}
+
+.text-image-section .column:nth-of-type(2).text {
+    text-align: right;
 }
 
 .text-image-section .columns {
@@ -383,15 +388,16 @@ footer .icon-heart {
 }
 
 .card-header .card-subtitle {
-    color: #3FA083;
+    color: #43AA8B;
     font-size: 2rem;
     font-weight: 400;
+    opacity: 1;
 }
 
 .card-body {
     padding-top: 0 !important;
     font-size: 2rem;
-    font-weight: lighter;
+    font-weight: 300;
 }
 
 .card-footer {
