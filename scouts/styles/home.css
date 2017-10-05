@@ -1,0 +1,95 @@
+#home-jumbotron {
+    background-image: url("../images/jumbotron-background2.jpg");
+    background-position: 50% -8rem;
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 7rem;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: inset 0px -89px 53px -49px rgba(255,255,255,1);
+/*    box-shadow: inset 0px -65px 20px -40px rgba(255,255,255,1);*/
+}
+
+#home-jumbotron h1, #home-jumbotron p {
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+#home-jumbotron a:hover, 
+#home-jumbotron a:focus,
+#home-jumbotron a:active {
+    background-color: white;
+    color: black;
+    text-shadow: none;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid black;
+}
+
+@media (max-width: 1280px) {
+    #home-jumbotron {
+        background-position: 50% -5rem;
+    }
+}
+
+@media (max-width: 820px) {
+    #home-jumbotron {
+        background-position: center;
+    }
+}
+
+#gallery-carousel {
+/*    background-color: #666666;*/
+/*    background-color: #97a08c;*/
+    background-color: #c1ccb5;
+    border-top: 1px solid #97a08c;
+    border-bottom: 1px solid #97a08c;
+}
+
+#gallery-carousel .carousel-item img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 75vh;
+    min-height: 300px;
+    box-shadow: 0px 0px 75px -12px rgba(0,0,0,0.5);
+    margin: 1.5rem 0;
+}
+
+#gallery-carousel .carousel-item {
+    overflow: hidden;
+}
+
+#gallery-carousel .gallery-text-item {
+    position: relative;
+}
+
+#gallery-carousel .gallery-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#gallery-carousel .gallery-text.top {
+    top: 1rem;
+}
+
+#gallery-carousel .gallery-text.bottom {
+    bottom: 1rem;
+}
+
+#baden-powell-display img {
+    height: 30rem;
+}
+
+#baden-powell-display p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}

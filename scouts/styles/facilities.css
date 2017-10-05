@@ -1,0 +1,50 @@
+#facilities-cards .card {
+    margin: 0.5rem 0;
+    border-color: #60524a;
+    border-radius: 0;
+}
+
+#facilities-cards .card img {
+    border:1px solid #60524a;
+}
+
+#facilities-cards .card .card-title {
+    color: #4b3a30;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+#sections-accordion .card {
+    border-color: #60524a;
+    border-radius: 0;
+}
+
+#sections-accordion .card-header {
+    border-radius: 0;
+    background-color: #8B786D;
+    border-bottom: 1px solid #60524a;
+}
+
+#sections-accordion .card-header a {
+    color: white;
+}
+
+[data-section-index] {
+    margin-bottom: 2rem;
+}
+
+[data-section-index] .list-group-item {
+    padding: 0.2rem 0.75rem;
+    border-radius: 0 !important;
+}
+
+#table-of-contents .header {
+    background-color: #8B786D;
+    color: #402a1d;
+}
+
+#table-of-contents .list-group-item {
+    border-color: #60524a;
+}
