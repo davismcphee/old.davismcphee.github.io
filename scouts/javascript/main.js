@@ -38,7 +38,7 @@ $(function () {
     
     $scrollUpButton.on("click", function () {
         if ($scrollUpButton.hasClass("show")) {
-            $("body").animate({
+            $("html, body").animate({
                 scrollTop: 0 + scrollTopOffset
             }, scrollSpeed);
         }
@@ -97,7 +97,7 @@ $(function () {
             $sectionLink = $section.find("a");
         if ($sectionLink.attr("aria-expanded") === "false")
             $sectionLink.click();
-        $("body").animate({
+        $("html, body").animate({
             scrollTop: $section.offset().top - 120
         }, 600);
         return false;
