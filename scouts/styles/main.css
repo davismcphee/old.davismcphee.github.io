@@ -4,7 +4,7 @@ body {
 }
 
 main.margin-top {
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 .btn {
@@ -37,6 +37,10 @@ main.margin-top {
 #navbar-main .navbar-nav .nav-item a:hover, #navbar-main .navbar-nav .nav-item a.active {
     color: #d3d3d3;
 }
+
+#header-main .navbar-brand img {
+    height: 3rem;
+} 
 
 #footer-main {
     border-top: 1px solid #d3d3d3;

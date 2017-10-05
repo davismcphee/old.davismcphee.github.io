@@ -1,27 +1,30 @@
 $(function () {
-//    var $scrollAndChange = $(".scroll-and-change");
-//    $(window).scroll(function () {
-//        $scrollAndChange.each(function () {
-//            var $self = $(this),
-//                scrollClass = $self.data("scroll-class");
-//            if ($(window).scrollTop() >= parseInt($self.data("scroll-distance")))
-//                $self.addClass(scrollClass);
-//            else
-//                $self.removeClass(scrollClass);
-//        });
-//    });
+    var $window = $(window);
     
+    //var $scrollAndChange = $(".scroll-and-change");
     var $scroller = $("[data-scroll]");
-    window.onscroll = function () {
+    $window.scroll(function () {
         $scroller.each(function () {
             var $self = $(this),
                 scrollClass = $self.data("scroll-class");
-            if (document.body.scrollTop >= parseInt($self.data("scroll-distance")))
+            if ($(window).scrollTop() >= parseInt($self.data("scroll-distance")))
                 $self.addClass(scrollClass);
             else
                 $self.removeClass(scrollClass);
         });
-    };
+    });
+    
+//    var $scroller = $("[data-scroll]");
+//    window.onscroll = function () {
+//        $scroller.each(function () {
+//            var $self = $(this),
+//                scrollClass = $self.data("scroll-class");
+//            if (document.body.scrollTop >= parseInt($self.data("scroll-distance")))
+//                $self.addClass(scrollClass);
+//            else
+//                $self.removeClass(scrollClass);
+//        });
+//    };
     
     var $toggler = $("#navbar-main"),
         $headerMain = $("#header-main");
@@ -44,8 +47,6 @@ $(function () {
         }
         return false;
     });
-    
-    var $window = $(window);
     
     var scrollUpIsOpen = false,
         scrollUpIntialized = false,
