@@ -1,27 +1,30 @@
 $(function () {
-//    var $scrollAndChange = $(".scroll-and-change");
-//    $(window).scroll(function () {
-//        $scrollAndChange.each(function () {
-//            var $self = $(this),
-//                scrollClass = $self.data("scroll-class");
-//            if ($(window).scrollTop() >= parseInt($self.data("scroll-distance")))
-//                $self.addClass(scrollClass);
-//            else
-//                $self.removeClass(scrollClass);
-//        });
-//    });
+    var $window = $(window);
     
+    //var $scrollAndChange = $(".scroll-and-change");
     var $scroller = $("[data-scroll]");
-    window.onscroll = function () {
+    $window.scroll(function () {
         $scroller.each(function () {
             var $self = $(this),
                 scrollClass = $self.data("scroll-class");
-            if (document.body.scrollTop >= parseInt($self.data("scroll-distance")))
+            if ($(window).scrollTop() >= parseInt($self.data("scroll-distance")))
                 $self.addClass(scrollClass);
             else
                 $self.removeClass(scrollClass);
         });
-    };
+    });
+    
+//    var $scroller = $("[data-scroll]");
+//    window.onscroll = function () {
+//        $scroller.each(function () {
+//            var $self = $(this),
+//                scrollClass = $self.data("scroll-class");
+//            if (document.body.scrollTop >= parseInt($self.data("scroll-distance")))
+//                $self.addClass(scrollClass);
+//            else
+//                $self.removeClass(scrollClass);
+//        });
+//    };
     
     var $toggler = $("#navbar-main"),
         $headerMain = $("#header-main");
@@ -38,14 +41,12 @@ $(function () {
     
     $scrollUpButton.on("click", function () {
         if ($scrollUpButton.hasClass("show")) {
-            $("body").animate({
+            $("html, body").animate({
                 scrollTop: 0 + scrollTopOffset
             }, scrollSpeed);
         }
         return false;
     });
-    
-    var $window = $(window);
     
     var scrollUpIsOpen = false,
         scrollUpIntialized = false,
@@ -97,7 +98,7 @@ $(function () {
             $sectionLink = $section.find("a");
         if ($sectionLink.attr("aria-expanded") === "false")
             $sectionLink.click();
-        $("body").animate({
+        $("html, body").animate({
             scrollTop: $section.offset().top - 120
         }, 600);
         return false;
